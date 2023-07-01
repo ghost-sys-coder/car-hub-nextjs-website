@@ -6,7 +6,7 @@ import { fuels, yearsOfProduction } from '@/constants';
 import { useEffect, useState } from 'react';
 
 
-export default async function Home({searchParams}) {
+export default async function Home({searchParams}: any) {
   
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturers || '',
